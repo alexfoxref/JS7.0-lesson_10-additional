@@ -68,7 +68,6 @@ input.addEventListener('input', () => {
 input.addEventListener('keydown', (event) => {
     if (event.keyCode == 8) {
         event.preventDefault();
-        console.log('-');
         string = input.value;
         numStr = string.replace(/[^\d]/g, '');
         numStr = numStr.slice(0, numStr.length - 1);
